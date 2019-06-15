@@ -9,6 +9,7 @@ const viewsDirectoryPath = path.join(__dirname, "../templates/views");
 const partialsDirectoryPath = path.join(__dirname, "../templates/partials");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "hbs");
 app.set("views", viewsDirectoryPath);
@@ -93,4 +94,4 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log(`Listening to port 3000 ...`));
+app.listen(port, () => console.log(`Listening to port ${port} ...`));
