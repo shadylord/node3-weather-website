@@ -12,7 +12,8 @@ const forecast = (latitude, longtitude, callback) => {
       const data = {
         precipProbability: body.currently.precipProbability,
         temperature: body.currently.temperature,
-        summary: body.currently.summary
+        summary: body.currently.summary,
+        windspeed: body.currently.windSpeed
       };
 
       callback(
@@ -21,7 +22,7 @@ const forecast = (latitude, longtitude, callback) => {
           data.temperature
         } derajat Celsius. Kemungkinan turunnya hujan adalah ${
           data.precipProbability
-        }%.`
+        }%. Wind speed adalah ${data.windspeed}.`
       );
     }
   });
