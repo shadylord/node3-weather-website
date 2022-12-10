@@ -9,7 +9,7 @@
   "author": "rizky ramdhaan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "hbs": "^4.0.4",
     "nodemon": "^1.19.1",
     "request": "^2.88.0"
